@@ -86,6 +86,9 @@ image	File	used to represent the pet's current state
 ![image](https://user-images.githubusercontent.com/60450655/140628952-e109e6b0-bc9f-4ce2-85a3-7f27c013db21.png)
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Login Screen 
+  - (READ)Read user's credentials to log in
+- Account Creation Screen 
+ - (CREATE) Make an account
+- Main Game Screen
+ - (READ) Understand user's play inputs 
