@@ -76,8 +76,14 @@ The purpose of this app is to allow the user to take care of the digital pet (Gr
 
 ## Schema 
 [This section will be completed in Unit 9]
-### Models
-[Add table of models]
+### Models  
+Property	Type	Description		
+name 	String	name given to the virtual pet		
+happiness	Number	score given to showcase pet's happiness level		
+status	String	what the pet is currently feeling		
+emotion 	Arrays	the different emotions the pet feels in relation to the status		
+![image](https://user-images.githubusercontent.com/60450655/140627617-77e18b7c-20c6-455a-a57e-811ee2cfa1f1.png)
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
