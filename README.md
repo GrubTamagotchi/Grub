@@ -92,3 +92,4 @@ image	File	used to represent the pet's current state
  - (CREATE) Make an account
 - Main Game Screen
  - (READ) Understand user's play inputs 
+ - (UPDATE) Update pet's scores
