@@ -89,7 +89,7 @@ image	File	used to represent the pet's current state
 - Login Screen 
   - (READ)Read user's credentials to log in
 - Account Creation Screen 
- - (CREATE) Make an account
+  - (CREATE) Make an account
 - Main Game Screen
- - (READ) Understand user's play inputs 
- - (UPDATE) Update pet's scores
+  - (READ) Understand user's play inputs 
+  - (UPDATE) Update pet's scores
