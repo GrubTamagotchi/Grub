@@ -82,7 +82,8 @@ name 	String	name given to the virtual pet
 happiness	Number	score given to showcase pet's happiness level		
 status	String	what the pet is currently feeling		
 emotion 	Arrays	the different emotions the pet feels in relation to the status		
-![image](https://user-images.githubusercontent.com/60450655/140627617-77e18b7c-20c6-455a-a57e-811ee2cfa1f1.png)
+image	File	used to represent the pet's current state		
+![image](https://user-images.githubusercontent.com/60450655/140628952-e109e6b0-bc9f-4ce2-85a3-7f27c013db21.png)
 
 ### Networking
 - [Add list of network requests by screen ]
