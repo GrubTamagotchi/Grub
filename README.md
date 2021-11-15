@@ -30,11 +30,18 @@ The purpose of this app is to allow the user to take care of the digital pet (Gr
 
 **Required Must-have Stories**
 
-* Have a login screen for user to keep track of their pet and score; a logout button as well
-* Display the pet and some different emotions
-* Have 3 options: Feed, Pet, Sleep
-* A happiness score; goes up when taken care of, goes down when neglected for too long
-* Giving it a name and displaying it
+- [x] Having a log in screen
+    - [x] Can sign up
+    - [ ] Can sign in *halfway done*
+- [x] Having the main game screen
+    - [ ] Logout Button
+    - [ ] Pet Name
+    - [ ] Pet Happiness Score
+    - [ ] Displaying Grub
+- [ ] Interacting with Grub
+    - [ ] Feed
+    - [ ] Sleep
+    - [ ] Pet
 
 **Optional Nice-to-have Stories**
 
