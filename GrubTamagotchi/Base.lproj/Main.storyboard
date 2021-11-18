@@ -60,12 +60,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="i52-7H-KeW">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="23a-mq-WK9">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="J17-II-Qmg">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="J17-II-Qmg">
                                 <rect key="frame" x="302" y="11" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.2280714915" green="0.5" blue="0.066655287660000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Log Out"/>
+                                <connections>
+                                    <action selector="onLogoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTr-jb-qcK"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -77,7 +80,7 @@
         <!--Login View Controller-->
         <scene sceneID="zca-sR-D3p">
             <objects>
-                <viewController id="Pst-5O-kEN" customClass="LoginViewController" customModule="GrubTamagotchi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Pst-5O-kEN" customClass="LoginViewController" customModule="GrubTamagotchi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yl1-sX-45q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
