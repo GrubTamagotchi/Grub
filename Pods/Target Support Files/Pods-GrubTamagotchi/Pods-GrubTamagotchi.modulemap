@@ -1,0 +1,6 @@
+framework module Pods_GrubTamagotchi {
+  umbrella header "Pods-GrubTamagotchi-umbrella.h"
+
+  export *
+  module * { export * }
+}
