@@ -3,8 +3,9 @@ Original App Design Project - README Template
 
 # Grub Tamagotchi 
 
-![](https://i.imgur.com/zAgYOn3.gif)
-https://i.imgur.com/zAgYOn3.gif
+![](https://i.imgur.com/QOAXX1y.gif)
+
+https://i.imgur.com/QOAXX1y.gif
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -33,12 +34,12 @@ The purpose of this app is to allow the user to take care of the digital pet (Gr
 
 - [x] Having a log in screen
     - [x] Can sign up
-    - [ ] Can sign in *halfway done*
+    - [x] Can sign in 
 - [x] Having the main game screen
-    - [ ] Logout Button
-    - [ ] Pet Name
+    - [x] Logout Button
+    - [x] Pet Name
     - [ ] Pet Happiness Score
-    - [ ] Displaying Grub
+    - [x] Displaying Grub
 - [ ] Interacting with Grub
     - [ ] Feed
     - [ ] Sleep
@@ -46,6 +47,7 @@ The purpose of this app is to allow the user to take care of the digital pet (Gr
 
 **Optional Nice-to-have Stories**
 
+* Let user change grub name
 * Allow user to take care of more than one pet
 * Giving the pet outfits
 * Providing an in game currency for user to get more outfits
