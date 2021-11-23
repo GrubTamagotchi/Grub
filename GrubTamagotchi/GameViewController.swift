@@ -16,8 +16,7 @@ class GameViewController: UIViewController {
     
     
     @IBOutlet weak var imageView: UIImageView!
-    
- 
+    @IBOutlet weak var grubNameField: UITextField!
     @IBAction func onFeed(_ sender: Any) {
         
         self.imageView.image = UIImage(named:"EatView")
@@ -27,6 +26,12 @@ class GameViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func onGrubName(_ sender: Any) {
+        let grubName = PFUser()
+        let petName = grubNameField.text!
+    }
+    
     
 
     @IBAction func onSleep(_ sender: Any) {
