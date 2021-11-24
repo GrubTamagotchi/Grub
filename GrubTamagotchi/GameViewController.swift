@@ -16,8 +16,8 @@ class GameViewController: UIViewController {
     
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var grubNameField: UITextField!
     
- 
     @IBAction func onFeed(_ sender: Any) {
         
         self.imageView.image = UIImage(named:"EatView")
@@ -27,6 +27,23 @@ class GameViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func onGrubName(_ sender: Any) {
+        
+        let pets = PFObject(className: "Pets")
+        pets["pet_name"] = grubNameField.text!
+        pets["score"] = 0
+        
+        pets.saveInBackground{(success, error) in
+            if success{
+                print("Save")
+            } else {
+                print("Not Save")
+            }
+        }
+
+    }
+    
     
 
     @IBAction func onSleep(_ sender: Any) {
@@ -62,6 +79,8 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        grubNameField.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -77,4 +96,11 @@ class GameViewController: UIViewController {
     }
     */
 
+}
+
+extension GameViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        grubNameField.resignFirstResponder()
+        return true
+    }
 }
