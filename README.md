@@ -44,6 +44,7 @@ The purpose of this app is to allow the user to take care of the digital pet (Gr
     - [x] Feed
     - [x] Sleep
     - [x] Pet
+- [ ] Working Database 
 
 **Optional Nice-to-have Stories**
 
