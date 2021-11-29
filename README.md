@@ -37,13 +37,13 @@ The purpose of this app is to allow the user to take care of the digital pet (Gr
     - [x] Can sign in 
 - [x] Having the main game screen
     - [x] Logout Button
-    - [x] Pet Name
-    - [ ] Pet Happiness Score
+    - [x] Pet Name (80% done)
+    - [x] Pet Happiness Score (80% done)
     - [x] Displaying Grub
-- [ ] Interacting with Grub
-    - [ ] Feed
-    - [ ] Sleep
-    - [ ] Pet
+- [x] Interacting with Grub
+    - [x] Feed
+    - [x] Sleep
+    - [x] Pet
 
 **Optional Nice-to-have Stories**
 
