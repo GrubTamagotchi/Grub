@@ -3,9 +3,9 @@ Original App Design Project - README Template
 
 # Grub Tamagotchi 
 
-![](https://i.imgur.com/QOAXX1y.gif)
+![](https://i.imgur.com/IjnIjeJ.gif)
 
-https://i.imgur.com/QOAXX1y.gif
+https://i.imgur.com/IjnIjeJ.gif
 
 ## Table of Contents
 1. [Overview](#Overview)
