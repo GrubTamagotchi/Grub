@@ -19,26 +19,26 @@ class GameViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var grubNameField: UITextField!
     
+    
     let pets = PFObject(className: "Pets")
     
     
+    
     @IBAction func onGrubName(_ sender: Any) {
-
-        //var query = PFQuery(className: "Pets")
-        pets["pet_name"] = grubNameField.text!
-        pets["Pet"] = grubNameField.text!
-        pets["Owner"] = PFUser.current()!
-        
-        pets.saveInBackground{(success, error) in
-            if success{
-                print("Save")
-            } else {
-                print("Not Save")
-            }
-        }
+    
+        let usr = PFUser.current()
+        usr!["petname"] = grubNameField.text
+        usr?.saveInBackground()
         
     }
-
+    
+    func dbScore()
+    {
+        let usr = PFUser.current()
+        usr!["score"] = Int(scoreLabel.text!)
+        usr?.saveInBackground()
+    }
+        
     
     func scoreCalculated()
     {
@@ -60,6 +60,7 @@ class GameViewController: UIViewController {
         
         pets["score"] = score
         }
+        dbScore()
     }
     
     func backgroundScore()
@@ -85,6 +86,7 @@ class GameViewController: UIViewController {
             }
             self.imgChange()
         }
+        dbScore()
     }
     
     func imgChange( )
@@ -106,7 +108,7 @@ class GameViewController: UIViewController {
             self.imageView.image = UIImage(named:"HappyView")
             
         }
-        
+        dbScore()
     }
     
     @IBAction func onFeed(_ sender: Any) {
@@ -161,7 +163,17 @@ class GameViewController: UIViewController {
         timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block:{
                 _ in self.backgroundScore()
             })
-                  // Do any additional setup after loading the view.
+        
+        if let str = PFUser.current()!["petname"] as? String {
+            grubNameField.text = str
+            print(str)
+        }
+        if let str2 = PFUser.current()!["score"] as? Int {
+            scoreLabel.text = String(str2)
+            print(String(str2))
+        }
+        dbScore()
+        // Do any additional setup after loading the view.
     }
     
 
